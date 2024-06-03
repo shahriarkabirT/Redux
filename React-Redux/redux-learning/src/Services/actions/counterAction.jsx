@@ -1,13 +1,14 @@
-import { DECREMENT, INCREAMENT, RESET } from "../constants/counterConstants"
+import { INCREMENT,DECREMENT, RESET } from "../constants/counterConstants.jsx"
+
+export const decrementCounter = () =>{
+    return{
+        type: DECREMENT
+    }
+}
 
 export const incrementCounter = () =>{
     return{
         type: INCREMENT
-    }
-}
-export const decrementCounter = () =>{
-    return{
-        type: DECREMENT
     }
 }
 export const reset = () =>{
